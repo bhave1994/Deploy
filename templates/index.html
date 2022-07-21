@@ -14,14 +14,19 @@
 
 <body>
  <div class="login">
-	<h1>Predict Salary Analysis</h1>
+	<h1>Predict Sales</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="experience" placeholder="Experience" required="required" />
-        <input type="text" name="test_score" placeholder="Test Score" required="required" />
-		<input type="text" name="interview_score" placeholder="Interview Score" required="required" />
-
+    	<input type="text" name="item_Weight" placeholder="item_Weight" required="required" />
+            	<input type="text" name="item_Fat_Content" placeholder="Item_Fat_Content" required="required" />
+            	<input type="text" name="item_Visibility" placeholder="Item_Visibility" required="required" />
+            	<input type="text" name="item_Type" placeholder="Item_Type" required="required" />
+            	<input type="text" name="item_MRP" placeholder="Item_MRP" required="required" />
+            	<input type="text" name="outlet_Establishment_Year" placeholder="Outlet_Establishment_Year" required="required" />
+            	<input type="text" name="outlet_Size" placeholder="Outlet_Size" required="required" />
+            	<input type="text" name="outlet_Location_Type" placeholder="Outlet_Location_Type" required="required" />
+            	<input type="text" name="outlet_Type" placeholder="Outlet_Type" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 
